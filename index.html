@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Burbukje Shakjiri – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --text: #1f2937;
+      --muted: #6b7280;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--card);
+      padding: 42px 48px 48px;
+      border-radius: 14px;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 1.4rem;
+      margin-bottom: 1.8rem;
+    }
+    .title h1 {
+      font-size: 1.9rem;
+      margin: 0 0 0.35rem;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .contact {
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    section {
+      margin-bottom: 1.7rem;
+    }
+    h2 {
+      font-size: 1.08rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    h2::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #e5e7eb;
+    }
+    .item {
+      margin-bottom: 1.05rem;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .item-title {
+      font-weight: 600;
+    }
+    .item-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    ul {
+      margin: 0.5rem 0 0 1.1rem;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 0.35rem;
+    }
+    .project-title {
+      font-weight: 500;
+      margin-top: 0.35rem;
+    }
+    .references p {
+      margin: 0.2rem 0;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(15, 118, 110, 0.08);
+      color: #0f766e;
+      border: 1px solid rgba(15, 118, 110, 0.26);
+      border-radius: 999px;
+      padding: 2px 10px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .download {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .download a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .download a:hover {
+      border-bottom-color: currentColor;
+    }
+    @media (max-width: 640px) {
+      .page {
+        margin: 0;
+        border-radius: 0;
+        padding: 28px 18px 54px;
+      }
+      header {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .contact {
+        text-align: left;
+      }
+    }
+    @media print {
+      body {
+        background: white;
+      }
+      .page {
+        box-shadow: none;
+        margin: 0;
+        border-radius: 0;
+      }
+      .download {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="title">
+        <h1>Burbukje Shakjiri</h1>
+        <p class="subtitle">Full-Stack Software Developer • React, TypeScript, Django, GraphQL, AWS</p>
+        <p class="download">Download PDF (optional): <a href="Burbukje-Shakjiri-Resume.pdf">Burbukje-Shakjiri-Resume.pdf</a></p>
+      </div>
+      <div class="contact">
+        <div>Phone: 0420 756 155</div>
+        <div><a href="mailto:beashakjiri@gmail.com">beashakjiri98@gmail.com</a></div>
+        <div><a href="https://www.linkedin.com/in/burbukje-shakjiri">linkedin.com/in/burbukje-shakjiri</a></div>
+      </div>
+    </header>
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">The University of Western Australia — Perth, WA</div>
+            <div class="item-meta">Bachelor of Science (Engineering Science)</div>
+          </div>
+          <div class="item-meta">Graduated: Jul 2023</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Lotterywest — Perth, WA</div>
+            <div class="item-meta">Software Engineer</div>
+          </div>
+          <div class="item-meta">Jun 2021 – Jun 2022</div>
+        </div>
+        <ul>
+          <li>Built and maintained interfaces with <strong>Django</strong> (backend) and <strong>React/TypeScript</strong> (frontend), improving usability for internal stakeholders.</li>
+          <li>Optimized workflows by implementing reusable frontend components, reducing development time for new features.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">Horizon Digital — Perth, WA</div>
+            <div class="item-meta">Software Developer</div>
+          </div>
+          <div class="item-meta">Aug 2022 – May 2024</div>
+        </div>
+        <ul>
+          <li>Led development of <strong>Sunset Timetrack</strong>, an internal tool for time-tracking, project management, and client billing, improving reporting accuracy.</li>
+          <li>Delivered full-stack solutions using <strong>Django, Golang, PHP (Laravel), React, Next.js, Svelte, TypeScript</strong> across multiple industries.</li>
+          <li>Collaborated in agile teams, ensuring on-time delivery of high-quality web applications.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">BHP (Contractor via Horizon Digital) — Perth, WA</div>
+            <div class="item-meta">Software Developer</div>
+          </div>
+          <div class="item-meta">Nov 2022 – Jun 2023</div>
+        </div>
+        <ul>
+          <li>Developed and maintained <strong>Content Editor</strong>, a core interface for internal documentation.</li>
+          <li>Focused on frontend development with <strong>React, TypeScript, Relay, Storybook</strong>, improving UI consistency and testing efficiency.</li>
+          <li>Utilized <strong>GraphQL</strong> queries and <strong>Django</strong> backend services to streamline content workflows.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">BHP (Contractor via Infosys) — Perth, WA</div>
+            <div class="item-meta">Software Developer</div>
+          </div>
+          <div class="item-meta">Jul 2024 – Sep 2025</div>
+        </div>
+        <ul>
+          <li>Contributed to the <strong>Standardised Work DevOps</strong> team, delivering full-stack features in <strong>Django, React/TypeScript, GraphQL, Relay</strong>.</li>
+          <li>Implemented containerization with <strong>Docker</strong>, reducing environment inconsistencies and deployment issues.</li>
+          <li>Integrated <strong>New Relic</strong> monitoring to improve performance visibility and reduce incident resolution time.</li>
+          <li>Deployed and managed applications on <strong>AWS</strong>, enabling scalability and reliability.</li>
+          <li>Collaborated closely with senior engineers on incident management and DevOps practices.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project Experience -->
+    <section>
+      <h2>Project Experience</h2>
+
+      <div class="item">
+        <div class="item-title">Horizon Digital — Digital Life</div>
+        <ul>
+          <li>Frontend development in <strong>Svelte</strong></li>
+          <li>Backend development in <strong>Golang</strong></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Horizon Digital — Surefire</div>
+        <ul>
+          <li>Frontend Lead — <strong>React, Next.js, TypeScript</strong></li>
+          <li>Backend development in <strong>Django</strong></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-title">Horizon Digital — Programmed</div>
+        <ul>
+          <li>Frontend development in <strong>React, Next.js, TypeScript</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section>
+      <h2>Leadership Experience</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">UWA Coders for Causes — Perth, WA</div>
+            <div class="item-meta">Secretary</div>
+          </div>
+          <div class="item-meta">Mar 2021 – Mar 2022</div>
+        </div>
+        <ul>
+          <li>Organised committee meetings and recorded minutes.</li>
+          <li>Helped organise and interview applicants for summer and winter web development projects.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <div class="item-title">UWA Programming Competitions Society — Perth, WA</div>
+            <div class="item-meta">Vice-President</div>
+          </div>
+          <div class="item-meta">Mar 2022 – Mar 2023</div>
+        </div>
+        <ul>
+          <li>Chaired committee meetings and ran weekly sessions on data structures and algorithms for programming competitions.</li>
+          <li>Organised ANZAC practice contests for the ICPC.</li>
+          <li>Conceptualised and organised <strong>Hackarithms</strong>, a hackathon centred on algorithmic solutions to real-world problems.</li>
+          <li>Ran intro sessions to competitive programming.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- References -->
+    <section>
+      <h2>References</h2>
+      <div class="references">
+        <p><strong>Anamika Sen Srivastava</strong></p>
+        <p>Principal DevOps • BOS Standardised Work</p>
+        <p>Phone: +61 426 373 792</p>
+        <p>Email: <a href="mailto:anamika.s.srivastava@bhp.com">anamika.s.srivastava@bhp.com</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
